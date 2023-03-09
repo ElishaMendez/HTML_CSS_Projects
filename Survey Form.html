@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">This is my Survery Form</h1>
+      <p id="description">thank you for taking my survey</p>
+    <form id="survey-form">
+      <label id="name-label">Name:
+        <input 
+        id="name" 
+        type="text" 
+        placeholder="name" 
+        required>
+        </input>
+      </label>
+      <label id="email-label">Email:
+        <input 
+        id="email" 
+        type="email" 
+        placeholder="email" 
+        required>
+        </input>
+      </label>
+      <label id="number-label">Age:
+        <input 
+        id="number" 
+        type="number" 
+        min="0" 
+        max="10" 
+        placeholder="Age">
+        </input>
+      </label>
+      
+      <!--1st Question-->
+        <select id="dropdown">
+          <option>Yes</option>
+          <option>No</option>
+          <option>Maybe</option>
+        </select>
+        
+      <!--2nd Question-->
+        <input type="radio" name="radio-group" value="1"></input>
+        <input type="radio" name="radio-group" value="2"></input>
+        <input type="radio" name="radio-group" value="3"></input>
+
+      <!--3rd Question-->
+        <input type="checkbox" value="Top"/>
+        <input type="checkbox" value="Left"/>
+        <input type="checkbox" value="Right"/>
+        <input type="checkbox" value="Bottom"/>
+        <input type="checkbox" value="Center"/>
+
+        <textarea></textarea>
+        
+        <button id="submit"></button>
+
+    </form>
+  </body>
+</html>
